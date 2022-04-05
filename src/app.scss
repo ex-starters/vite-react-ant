@@ -1,0 +1,53 @@
+@import '../node_modules/antd/dist/antd.css';
+// @import '../node_modules/@ant-design/pro-form/dist/form.css';
+// @import '../node_modules/@ant-design/pro-form/dist/form.css';
+// @import '../node_modules/@ant-design/pro-table/dist/';
+// import '@ant-design/pro-table/dist/table.css';
+// import '@ant-design/pro-layout/dist/layout.css';
+
+
+$header-height: 64px;
+$border: 1px solid #f0f0f0;
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    bottom: 0px;
+    flex: 0 0 200px;
+    max-width: 200px;
+    min-width: 200px;
+    width: 200px;
+    transition: all .2s;
+    border-right: $border;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+
+.header {
+    height: $header-height;
+    border-bottom: $border;
+}
+
+.logo {
+    height: $header-height;
+    border-bottom: $border;
+}
+
+
+.footer {
+    height: 100px;
+    // background-color: bisque;
+}
