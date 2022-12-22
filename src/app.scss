@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import '../node_modules/antd/dist/antd.css';
 // @import '../node_modules/@ant-design/pro-form/dist/form.css';
 // @import '../node_modules/@ant-design/pro-form/dist/form.css';
 // @import '../node_modules/@ant-design/pro-table/dist/';
-// import '@ant-design/pro-table/dist/table.css';
+// imporwt '@ant-design/pro-table/dist/table.css';
 // import '@ant-design/pro-layout/dist/layout.css';
 
 
@@ -50,4 +54,30 @@ $border: 1px solid #f0f0f0;
 .footer {
     height: 100px;
     // background-color: bisque;
+}
+
+// 
+.table {
+    @apply min-w-full;
+
+    thead {
+        tr {
+            @apply border-b;
+            th {
+                @apply px-6 py-4 text-sm font-medium text-gray-900 text-left;
+            }
+        }
+    }
+
+    tbody {
+        @apply border-b;
+
+        tr {
+            @apply border-b;
+
+            td {
+                @apply px-6 py-4 text-sm font-light text-gray-900 text-left;
+            }
+        }
+    }
 }
